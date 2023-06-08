@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
 import logo from "./logo.svg";
-import {createBrowserRouter, Outlet, RouterProvider} from "react-router-dom";
 
-const MainPage = () => {
+const App = () => {
     return (
         <div>
             <header className="App-header">
@@ -15,18 +14,6 @@ const MainPage = () => {
         </div>
     );
 }
-
-const router = createBrowserRouter([
-    {
-        path: '/',
-        element:
-            <div className="App">
-                <MainPage/>
-            </div>
-    }
-])
-
-const App = () => <RouterProvider router={router}/>
 
 
 export default App;
