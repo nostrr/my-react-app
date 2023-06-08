@@ -21,19 +21,12 @@ const router = createBrowserRouter([
         path: '/',
         element:
             <div className="App">
-                <Outlet/>
-            </div>,
-        children: [
-            {
-                path: '/',
-                element: <MainPage/>
-            }
-        ]
+                <MainPage/>
+            </div>
     }
 ])
 
 const App = () => <RouterProvider router={router}/>
-
 
 
 export default App;
